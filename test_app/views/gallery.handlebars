@@ -1,0 +1,29 @@
+<section class="py-5 mt-5">
+    <div class="container">
+        <h1 class="display-4 text-center mb-5">Coffee Art Gallery</h1>
+        <div class="row">
+            {{#each gallery}}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <h5>{{title}}</h5>
+                        <p class="text-muted">{{description}}</p>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        
+        <div class="text-center mt-5">
+            <p class="lead">Want to see more of my work or commission a custom piece?</p>
+            <a href="/contact" class="btn btn-coffee btn-lg">
+                <i class="fas fa-envelope"></i> Contact Me
+            </a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 mb-4">About {{name}}</h1>
+                <p class="lead">{{bio}}</p>
+                
+                <h3 class="mt-5 mb-4">Professional Experience</h3>
+                {{#each experience}}
+                <div class="experience-card mb-4">
+                    <h4>{{title}}</h4>
+                    <h6 class="text-coffee">{{company}}</h6>
+                    <p class="text-muted">{{period}}</p>
+                    <p>{{description}}</p>
+                </div>
+                {{/each}}
+
+                <h3 class="mt-5 mb-4">Skills & Expertise</h3>
+                <div class="row">
+                    {{#each skills}}
+                    <div class="col-md-6 mb-3">
+                        <div class="skill-item">
+                            <i class="fas fa-coffee text-coffee"></i>
+                            <span>{{this}}</span>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="/contact" class="btn btn-coffee btn-lg">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
